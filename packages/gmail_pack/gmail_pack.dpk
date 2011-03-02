@@ -1,0 +1,40 @@
+package gmail_pack;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  GMailSMTP in 'GMailSMTP.pas',
+  mimemess in '..\..\addons\synapse\mimemess.pas',
+  mimepart in '..\..\addons\synapse\mimepart.pas',
+  smtpsend in '..\..\addons\synapse\smtpsend.pas',
+  synachar in '..\..\addons\synapse\synachar.pas',
+  blcksock in '..\..\addons\synapse\blcksock.pas',
+  synsock in '..\..\addons\synapse\synsock.pas';
+
+end.
